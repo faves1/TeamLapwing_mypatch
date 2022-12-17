@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital@1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "manrope", sans-serif;
+  /* width: 800px; */
+  height: 710px;
+}
+
+/* container for the header */
+.father {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+/* container for header text */
+.mother {
+  font-size: 15px;
+  color: white;
+}
+.fatherlogo {
+  font-weight: 500;
+}
+
+.fatherlogo2 {
+  font-family: "Mali", sans-serif;
+  position: relative;
+  left: 70px;
+  bottom: 50px;
+  font-size: 35px;
+  color: white;
+  letter-spacing: 0.8px;
+}
+
+.sibling1 {
+  background-color: rgb(79, 79, 217);
+  width: 768px;
+  height: 745px;
+  background-size: cover;
+}
+.sibling1child {
+  position: relative;
+  top: 230px;
+  left: 225px;
+  height: 300px;
+  width: 40%;
+  background-color: white;
+  opacity: 0.3;
+  border-style: none;
+  box-shadow: 0px 0px 50px 50px white;
+  border-radius: 600px;
+}
+.sibling1gchild {
+  position: absolute;
+  top: 160px;
+  left: 95px;
+  opacity: 1;
+  height: 500px;
+  width: 500px;
+}
+
+.siblingform {
+  position: absolute;
+  top: -95px;
+  left: 768px;
+  background-color: white;
+  float: right;
+  width: 20%;
+  height: 710px;
+}
+
+.fatherform {
+  position: relative;
+  left: 350px;
+  color: blue;
+  font-size: 25px;
+  margin-top: 180px;
+}
+
+.parentform {
+  position: relative;
+  top: 60px;
+  left: 220px;
+  margin-top: 10px;
+}
+
+.emailform {
+  margin-top: 17px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.passform {
+  margin-top: 17px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+input {
+  padding: 7px;
+  width: 320px;
+}
+
+a:link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fgt {
+  position: relative;
+  top: 8px;
+  left: 170px;
+}
+
+.btn1 {
+  position: relative;
+  top: 30px;
+  border: 0px;
+  padding: 8px;
+  background-color: rgb(22, 22, 194);
+  width: 320px;
+  color: white;
+  cursor: pointer;
+}
+
+.already {
+  position: relative;
+  top: 130px;
+  left: 259px;
+}
+
+.ready {
+  display: flex;
+  position: relative;
+  top: 160px;
+  left: 223px;
+}
+
+.hor1 {
+  width: 90px;
+  border-bottom: 1px solid black;
+  margin-right: 10px;
+}
+
+.hor3 {
+  width: 106px;
+  border-bottom: 1px solid black;
+  margin-left: 10px;
+}
+
+.apple {
+  position: relative;
+  top: 192px;
+  left: 223px;
+  border-style: 2px solid black;
+  cursor: pointer;
+}
+
+.facebook {
+  position: relative;
+  top: 199px;
+  left: 305px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.google {
+  position: relative;
+  top: 201px;
+  left: 385px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
