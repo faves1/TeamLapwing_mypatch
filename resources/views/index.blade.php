@@ -20,15 +20,15 @@
       <div class="navbar">
         <div class="bar-1">
           <img src="{{ URL('images/Vector.png') }}" alt="A blue round logo" />
-          <h1>builda</h1>
+          <h1 class="logo-text"><a href="{{route('index')}}">builda</a></h1>
           <p class="border">home</p>
           <p>templates</p>
           <p>plans</p>
           <p>support</p>
         </div>
         <div class="bar-2">
-          <div>login</div>
-          <button action="/register">Create my Website</button>
+          <div><a href="{{route('login')}}">login</a></div>
+          <button><a href="{{route('signup')}}">Create my Website</a></button>
         </div>
       </div>
     </nav>

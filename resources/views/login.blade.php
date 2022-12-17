@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ asset('css/login.css') }}"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
   </head>
   <body>
     <div class="father">
       <div class="mother">Create amazing website with</div>
       <div class="fatherlogo">
-        <img src="{{ URL('images/assets/logowing.png')}}" height="60px" width="60px" alt="BUIDA"/>
+        <img src="{{ URL('images/login/logowing.png') }}" height="60px" width="60px" alt="BUIDA"/>
       </div>
       <div class="fatherlogo2">BUILDA</div>
     </div>
@@ -19,12 +19,11 @@
       <div class="sibling1">
         <div class="sibling1child"></div>
         <div class="sibling1gchild">
-          <img src="{{URL('images/assets/Laptopwing.png')}}" />
+          <img src="{{ URL('images/login/Laptopwing.png') }}" />
         </div>
       </div>
       
       <div class="siblingform">
-
         <form action="/loginUser" method="post">
         <div class="fatherform">Login</div>
         <form>
@@ -39,7 +38,6 @@
               name="email"
               required
             />
-            <span>@error('email') {{$message}} @enderror</span>
           </div>
         </div>
         <div class="parentform">
@@ -53,13 +51,12 @@
               name="password"
               required
             />
-            <span>@error('password') {{$message}} @enderror</span>
+            @csrf
             <div class="fgt"> <a href="">Forgotten password?</a></div>
           </div>
           <div class="1"><button type="submit" class="btn1">Login</button></div>
         </div>
-        @csrf
-        <div class="already">Don't have an account?<a href="">Signup</a></div>
+        <div class="already">Don't have an account?<a href="{{route('signup')}}">Signup</a></div>
         <div class="ready">
           <div class="hor1"></div>
          <div class="hor2"> or login with</div>
@@ -69,11 +66,11 @@
     <footer>
   
       <button class="apple">
-      <img src="{{ URL('images/assets/applelogowing.png')}}" alt="log in with iCloud" width="40px" height="40px" />
+      <img src="{{ URL('images/login/applelogowing.png') }}" alt="log in with iCloud" width="40px" height="40px" />
       </button>
-    <button type="submit" class="facebook"><img src="{{URL('images/assets/Facebookwing.jpg')}}" width="50px" alt="log in with facebook" height="50px" /></button>
+    <button type="submit" class="facebook"><img src="{{ URL('images/login/Facebookwing.jpg') }}" width="50px" alt="log in with facebook" height="50px" /></button>
     <button class="google">
-      <img src="{{URL('images/assets/googlewing.png')}}" alt="log in with gmail" width="50px" height="50px" />
+      <img src="{{ URL('images/login/googlewing.png') }}" alt="log in with gmail" width="50px" height="50px" />
       </button>
   </footer>
 </form>
